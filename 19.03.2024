@@ -1,0 +1,83 @@
+// abstract class Car{
+//     model:string;
+
+// abstract go(): void;
+// abstract stop(): void;
+// abstract start(): void;
+// }
+// class Vaz extends Car{
+
+// go(){
+//     console.log("vaz")
+// }
+// stop(){}
+// start(){}
+// }
+
+// abstract class Geometry{
+//     with: string;
+//     color: string;
+
+//     abstract draw(): void;
+
+// } 
+// class Line extends Geometry{
+// x: number;
+// draw(){}
+// }
+// class Rect extends Geometry {
+// x: number;
+//    y:number; 
+//    draw(){}
+
+// }
+// class Ellipse extends Geometry{
+//    x: number;
+//    y:number;
+//    draw(){} 
+// }
+// const katya: Geometry[] = [];
+// katya[0] = new Line()
+// katya[1] = new Rect();
+// katya[2] = new Ellipse()
+
+abstract class Recipes {
+    names: string;
+    types: 'vegan' | 'typical';
+
+    abstract showIngredients(): void
+    abstract showRecipe(): void
+}
+class Pizza extends Recipes {
+    ingredients: string;
+    recipe: string;
+
+    showIngredients() {
+
+    }
+    showRecipe() {
+
+    }
+}
+class Salad extends Recipes {
+    ingredients: string;
+    recipe: string;
+
+    showIngredients() { }
+    showRecipe() { }
+}
+class Porridge extends Recipes {
+    ingredients: string;
+    recipe: string;
+
+    showIngredients() { }
+    showRecipe() { }
+}
+const katya: Recipes[] = [];
+katya[0] = new Pizza()
+katya[1] = new Salad();
+katya[2] = new Porridge()
+
+
+katya[0].showIngredients()
+katya[0].showRecipe()
